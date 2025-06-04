@@ -26,3 +26,35 @@ We aim to explore how Oceanus Folk evolved from a local genre into a global phen
 **Related Work**
 
 We draw on network analysis techniques as implemented in the tidygraph and ggraph frameworks , and structure our problem understanding through HDAV (Hypothesis-Driven Approach for VAST) . We incorporate lessons on visual storytelling and exploratory workflows using tools developed in past VAST challenges .
+
+**Approach**
+
+Our project will follow these key modules, each owned by a team member:
+
+**Network Construction**:
+
+-   Convert JSON knowledge graph (MC1_graph.json) into tbl_graph.
+
+-   Identify node types (songs, people, albums), edges (influence, collaboration), and their attributes (release dates, genres).
+
+**Career Profiling**:
+
+-   Trace Sailor Shift’s career arc.
+
+-   Use time-based visualizations (timelines, slopegraphs) to show genre transitions and viral milestones.
+
+    **Influence Diffusion**:
+
+-   Construct subgraphs of Oceanus Folk works and their downstream influence.
+
+-   Use edge filtering to isolate influence types: coverof, interpolatesfrom, etc.
+
+-   Create genre-level Sankey diagrams and time-faceted network graphs to assess diffusion trends.
+
+    **Rising Star Detection**:
+
+-   Calculate centrality, community clustering, and influence scores.
+
+-   Compare Sailor’s early career path with other artists using slopegraphs and sparkline summaries.
+
+-   Build a Shiny module to predict likely future Oceanus Folk influences.
