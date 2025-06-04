@@ -19,6 +19,10 @@ We aim to explore how Oceanus Folk evolved from a local genre into a global phen
 
 -   How Sailor's collaborations and influence shaped the genre.
 
--    The genre's influence on others over time.
+-   The genre's influence on others over time.
 
 -   The defining traits of rising stars and how to predict future Oceanus Folk influencers.
+
+**Related Work**
+
+We draw on network analysis techniques as implemented in the tidygraph and ggraph frameworks , and structure our problem understanding through HDAV (Hypothesis-Driven Approach for VAST) . We incorporate lessons on visual storytelling and exploratory workflows using tools developed in past VAST challenges .
