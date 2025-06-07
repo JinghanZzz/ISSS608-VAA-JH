@@ -19,5 +19,26 @@
     "title": "ISSS608-VAA-T9",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\n\n1 + 1\n\n[1] 2"
+  },
+  {
+    "objectID": "Meeting Minutes/Meeting Minute1.html",
+    "href": "Meeting Minutes/Meeting Minute1.html",
+    "title": "Meeting Minute1",
+    "section": "",
+    "text": "Date: May 4, 2025\nTime: 8-9pm\nLocation: Zoom\nAttendees: Fu Yilin, Lu Linsen, Zhang Jinghan\n\n\n\n\nAgree on taking VAST Mini Challenge 1 as our project topic and assigned task to each team member.\n@Lu Linsen: Q1\n@Zhang Jinghan: Q2\n@Fu Yilin: Q3\n\n\n\nThe team jointly discussed and designed the main bar structure of the webpage. The specific details are outlined below\n\nMain Bar:\n\nOverview\nPoster\nShiny App:\n\nShiny App\nUser Guide\n\nPrototype\n\nCode for each of the 3 questions (base on takehome3)\n+Code for Shiny App\n\nTeam\n\n\n\n\n\nStoryline of our project\nContent in each Shiny page\nWhat analysis?/ chart to apply in each page\n\n\n\nAll three members have agreed to adopt a consistent Shiny format for our project, with the details outlined below:\n\nOverview:\n\nGoal/Challenge;\n+Briefing of Module in the App;\n\nUser Guide\nSailor Swift‘s Career Profile   Q1’s analysis\nSpread of Oceanus Folk  Q2’s analysis\nRising Music Stars   Q3’s analysis\nInsight/Conclusion\n\n\n\n\n\nJune 8th, 11:59pm:              Proposal on Netlify\nJune 26th, 11:59pm:             Poster on Elearn\nJuly 2nd, 2:00-3:00pm:        Poster Presentation\nJuly 6th, 11:59pm:               Final Submission (WebPage, Shiny, User guide, Poster, Minute)\n\n\n\n\nDecide how to distinguish input id: id + Initial to avoid conflict?\nWe agree to use variable name +id, e.g. yearinput_F, nameinput_L, genreinput_Z\n\n\n\n\n\nGithub repository build and connect\nWebPage’s Quarto, Css,  qmd & Netlify\nShiny App’s Quarto, Css,  qmd (& Netlify)?\nProposal\nMinute for meeting 1"
+  },
+  {
+    "objectID": "Meeting Minutes/Meeting Minute1.html#agenda",
+    "href": "Meeting Minutes/Meeting Minute1.html#agenda",
+    "title": "Meeting Minute1",
+    "section": "",
+    "text": "Agree on taking VAST Mini Challenge 1 as our project topic and assigned task to each team member.\n@Lu Linsen: Q1\n@Zhang Jinghan: Q2\n@Fu Yilin: Q3\n\n\n\nThe team jointly discussed and designed the main bar structure of the webpage. The specific details are outlined below\n\nMain Bar:\n\nOverview\nPoster\nShiny App:\n\nShiny App\nUser Guide\n\nPrototype\n\nCode for each of the 3 questions (base on takehome3)\n+Code for Shiny App\n\nTeam\n\n\n\n\n\nStoryline of our project\nContent in each Shiny page\nWhat analysis?/ chart to apply in each page\n\n\n\nAll three members have agreed to adopt a consistent Shiny format for our project, with the details outlined below:\n\nOverview:\n\nGoal/Challenge;\n+Briefing of Module in the App;\n\nUser Guide\nSailor Swift‘s Career Profile   Q1’s analysis\nSpread of Oceanus Folk  Q2’s analysis\nRising Music Stars   Q3’s analysis\nInsight/Conclusion\n\n\n\n\n\nJune 8th, 11:59pm:              Proposal on Netlify\nJune 26th, 11:59pm:             Poster on Elearn\nJuly 2nd, 2:00-3:00pm:        Poster Presentation\nJuly 6th, 11:59pm:               Final Submission (WebPage, Shiny, User guide, Poster, Minute)\n\n\n\n\nDecide how to distinguish input id: id + Initial to avoid conflict?\nWe agree to use variable name +id, e.g. yearinput_F, nameinput_L, genreinput_Z"
+  },
+  {
+    "objectID": "Meeting Minutes/Meeting Minute1.html#action-list-before-next-meeting",
+    "href": "Meeting Minutes/Meeting Minute1.html#action-list-before-next-meeting",
+    "title": "Meeting Minute1",
+    "section": "",
+    "text": "Github repository build and connect\nWebPage’s Quarto, Css,  qmd & Netlify\nShiny App’s Quarto, Css,  qmd (& Netlify)?\nProposal\nMinute for meeting 1"
   }
 ]
