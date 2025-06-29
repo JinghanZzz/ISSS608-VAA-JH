@@ -1,62 +1,37 @@
 ---
-title: "Proposal"
+title: "Project Overview"
 format: html
+author: "Linsen Lu"
+execute: 
+  eval: true
+  echo: true
+  warning: false
 ---
 
-**Visual Analytics Project Proposal**
+## Introduction
 
-**Mapping the Rise of Sailor Shift and the Ripple of Oceanus Folk:**
+The music industry is constantly evolving, with emerging genres and artists reshaping cultural landscapes. One notable example is the rise of “Oceanus Folk,” a genre popularized by the artist Sailor Shift. Understanding her influence requires examining musical trends, collaboration networks, and the genre’s transformation over time.
 
-**A Visual Analytics Journey**
+Hence, there is a need for analytical tools that allow users to explore Sailor Shift’s career, collaborations, and legacy within the broader Oceanus Folk community. In this project, we propose a data-driven approach using visualizations to uncover key patterns in her artistic journey and forecast future genre developments.
 
-**Motivation**
+## Motivation
 
 Oceanus Folk began as a niche genre tied to the cultural identity of the small island nation of Oceanus. Its unexpected global emergence—catalyzed by Sailor Shift’s meteoric career—offers a rare opportunity to examine the interplay between individual stardom, genre influence, and collaborative networks in music. Understanding how a genre spreads and evolves offers insight not only into musical trends but also into networked cultural transmission.
 
-**Problem Statement**
+## Methodology
 
-We aim to explore how Oceanus Folk evolved from a local genre into a global phenomenon, focusing particularly on Sailor Shift's role. We investigate:
+To understand the evolution and influence of Oceanus Folk, particularly through the career of Sailor Shift, our team adopted a modular, data-driven approach. The methodology consists of four key components:
 
--   How Sailor's collaborations and influence shaped the genre.
+-   **Network Construction**: We parsed a JSON-based music knowledge graph into a tidygraph structure, identifying key node types (artists, songs, albums) and edge relationships (e.g., collaboration, influence). This provided the foundational structure for our visual analytics.
 
--   The genre's influence on others over time.
+-   **Career Profiling**: We traced Sailor Shift’s career over time using timeline and slopegraph visualizations to reveal genre transitions and key milestones. This helped surface patterns in her collaborations and viral growth.
 
--   The defining traits of rising stars and how to predict future Oceanus Folk influencers.
+-   **Influence Analysis**: We extracted subgraphs to study how Sailor influenced and was influenced by others. By filtering specific edge types (e.g., *coverof*, *interpolatesfrom*), we mapped both direct and indirect genre diffusion and constructed genre-level Sankey diagrams and network timelines.
 
-**Related Work**
+-   **Rising Star Detection**: Using centrality, clustering, and influence scores, we developed a model to highlight rising artists. We compared their early trajectories with Sailor's to predict future Oceanus Folk influencers.
 
-We draw on network analysis techniques as implemented in the tidygraph and ggraph frameworks , and structure our problem understanding through HDAV (Hypothesis-Driven Approach for VAST) . We incorporate lessons on visual storytelling and exploratory workflows using tools developed in past VAST challenges .
+## Storyboard
 
-**Approach**
+Our storyboard is structured into multiple interactive modules. Each module is specifically designed to address a key question that users may have about the Oceanus Folk music community, enabling them to explore Sailor Shift’s influence and the genre’s evolution from various perspectives. These proposed modules together will create a comprehensive, user-driven exploration platform, enabling a deep dive into the artistic and cultural dynamics of the Oceanus Folk genre.
 
-Our project will follow these key modules, each owned by a team member:
-
-**Network Construction**:
-
--   Convert JSON knowledge graph (MC1_graph.json) into tbl_graph.
-
--   Identify node types (songs, people, albums), edges (influence, collaboration), and their attributes (release dates, genres).
-
-**Career Profiling**:
-
--   Trace Sailor Shift’s career arc.
-
--   Use time-based visualizations (timelines, slopegraphs) to show genre transitions and viral milestones.
-
-    **Influence Diffusion**:
-
--   Construct subgraphs of Oceanus Folk works and their downstream influence.
-
--   Use edge filtering to isolate influence types: coverof, interpolatesfrom, etc.
-
--   Create genre-level Sankey diagrams and time-faceted network graphs to assess diffusion trends.
-
-    **Rising Star Detection**:
-
--   Calculate centrality, community clustering, and influence scores.
-
--   Compare Sailor’s early career path with other artists using slopegraphs and sparkline summaries.
-
--   Build a Shiny module to predict likely future Oceanus Folk influences.
-
-yilin test
+For more details, please move to our Shiny APP!
