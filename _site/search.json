@@ -46,7 +46,28 @@
     "href": "EDA.html",
     "title": "EDA",
     "section": "",
-    "text": "111"
+    "text": "pacman::p_load(igraph, tidygraph, ggraph, \n               visNetwork, lubridate, clock,\n               tidyverse, graphlayouts, \n               concaveman, ggforce, jsonlite, dplyr)\n\n\nt_data &lt;- fromJSON(\"data/MC1_graph.json\",\n                   simplifyDataFrame = TRUE)\n\n\nnodes_tbl &lt;- as_tibble(t_data$nodes)\nedges_tbl &lt;- as_tibble(t_data$links)"
+  },
+  {
+    "objectID": "EDA.html#getting-start",
+    "href": "EDA.html#getting-start",
+    "title": "EDA",
+    "section": "",
+    "text": "pacman::p_load(igraph, tidygraph, ggraph, \n               visNetwork, lubridate, clock,\n               tidyverse, graphlayouts, \n               concaveman, ggforce, jsonlite, dplyr)\n\n\nt_data &lt;- fromJSON(\"data/MC1_graph.json\",\n                   simplifyDataFrame = TRUE)\n\n\nnodes_tbl &lt;- as_tibble(t_data$nodes)\nedges_tbl &lt;- as_tibble(t_data$links)"
+  },
+  {
+    "objectID": "EDA.html#visualizing-edge-types-frequency",
+    "href": "EDA.html#visualizing-edge-types-frequency",
+    "title": "EDA",
+    "section": "Visualizing Edge Types Frequency",
+    "text": "Visualizing Edge Types Frequency\n\nggplot(data = edges_tbl,\n       aes(y = `Edge Type`)) +\n  geom_bar()\n\n\n\n\n\n\n\n\nThis bar chart above shows the distribution of different edge types in the music relationship network. The most common type is PerformerOf, indicating that the data heavily captures who performed which work. Other frequent types include ComposerOf, LyricistOf, and ProducerOf, highlighting the importance of creative and production roles. In contrast, relationships like MemberOf and DirectlySamples are less common, suggesting these connections are either rarer or less documented."
+  },
+  {
+    "objectID": "EDA.html#visualizing-node-types-frequency",
+    "href": "EDA.html#visualizing-node-types-frequency",
+    "title": "EDA",
+    "section": "Visualizing Node Types Frequency",
+    "text": "Visualizing Node Types Frequency\n\nggplot(data = nodes_tbl,\n       aes(y = `Node Type`)) +\n  geom_bar()\n\n\n\n\n\n\n\n\nThis bar chart displays the distribution of different node types in the music network dataset. The most common type is Person, with a count far exceeding other categories, indicating a strong focus on individual artists, producers, and contributors. Songs also appear in large numbers, highlighting the dataset’s emphasis on works being created or performed. Other types like Albums, RecordLabels, and MusicalGroups are present but in significantly smaller quantities."
   },
   {
     "objectID": "about.html",
