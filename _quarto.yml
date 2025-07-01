@@ -2,20 +2,35 @@ project:
   type: website
 
 website:
-  title: "ISSS608-VAA-T9"
+  title: "Sailor Shift: Rise and Resonance"
   navbar:
-    left:
-      - href: index.qmd
-        text: Home
-      - href: Proposal.qmd
-        text: Project Proposal
-
+    right:
+      - href: "index.qmd"
+        text: "Home"
+      - href: "Proposal.qmd"
+        text: "Project Overview"
+      - text: "Discovery"
+        menu: 
+          - text: "Dataset and Variables"
+            href: "Variables.qmd"
+          - text: "Data Wrangling"
+            href: "Data Wrangling.qmd"
+          - text: "EDA"
+            href: "EDA.qmd"
+      - href: "Shiny App.qmd"
+        text: "Shiny App"  
+      - href: "User Guide.qmd"
+        text: "User Guide"  
+      - href: "Poster.qmd"
+        text: "Poster"         
 format:
   html:
     theme:
       - cosmo
       - brand
-    css: styles.css
+    css: 
+      - styles.css
+      - custom1.css
     toc: true
 
 editor: visual

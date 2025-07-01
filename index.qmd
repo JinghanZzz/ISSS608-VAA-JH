@@ -1,11 +1,15 @@
 ---
-title: "ISSS608-VAA-T9"
+title: ""
+format:
+  html:
+    page-layout: full
+    css: custom1.css
 ---
 
-This is a Quarto website.
+<div class="hero-section">
+  <div class="hero-text">
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+  </div>
+</div>
 
-```{r}
-1 + 1
-```
+

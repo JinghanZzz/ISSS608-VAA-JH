@@ -1,0 +1,43 @@
+---
+title: "EDA"
+format: html
+---
+
+## Getting Start
+
+```{R}
+pacman::p_load(igraph, tidygraph, ggraph, 
+               visNetwork, lubridate, clock,
+               tidyverse, graphlayouts, 
+               concaveman, ggforce, jsonlite, dplyr)
+
+
+t_data <- fromJSON("data/MC1_graph.json",
+                   simplifyDataFrame = TRUE)
+
+
+nodes_tbl <- as_tibble(t_data$nodes)
+edges_tbl <- as_tibble(t_data$links) 
+
+
+```
+
+## Visualizing Edge Types Frequency
+
+```{R}
+ggplot(data = edges_tbl,
+       aes(y = `Edge Type`)) +
+  geom_bar()
+```
+
+This bar chart above shows the distribution of different edge types in the music relationship network. The most common type is PerformerOf, indicating that the data heavily captures who performed which work. Other frequent types include ComposerOf, LyricistOf, and ProducerOf, highlighting the importance of creative and production roles. In contrast, relationships like MemberOf and DirectlySamples are less common, suggesting these connections are either rarer or less documented.
+
+
+## Visualizing Node Types Frequency
+```{R}
+ggplot(data = nodes_tbl,
+       aes(y = `Node Type`)) +
+  geom_bar()
+```
+This bar chart displays the distribution of different node types in the music network dataset. The most common type is **Person**, with a count far exceeding other categories, indicating a strong focus on individual artists, producers, and contributors. **Songs** also appear in large numbers, highlighting the dataset’s emphasis on works being created or performed. Other types like **Albums**, **RecordLabels**, and **MusicalGroups** are present but in significantly smaller quantities.
+
