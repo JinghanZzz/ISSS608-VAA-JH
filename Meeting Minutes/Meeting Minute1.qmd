@@ -1,0 +1,106 @@
+---
+title: "Meeting Minute1"
+format: html
+style: css
+freeze: true
+warning: false
+---
+
+# **ISSS608 Project Meeting Minutes 1 **
+
+**Date:** May 4, 2025**\
+Time:** 8-9pm**\
+Location:** Zoom**\
+Attendees:** Fu Yilin, Lu Linsen, Zhang Jinghan
+
+## **Agenda**
+
+### **01 Project topic**
+
+Agree on taking VAST Mini Challenge 1 as our project topic and assigned task to each team member.
+
+\@Lu Linsen: Q1
+
+\@Zhang Jinghan: Q2
+
+\@Fu Yilin: Q3
+
+### **02 Desing of the Web Page /Deliverables**
+
+The team jointly discussed and designed the main bar structure of the webpage. The specific details are outlined below
+
+-   Main Bar:
+
+    -   Overview
+
+    -   Poster
+
+    -   Shiny App:
+
+        -   Shiny App
+
+        -   User Guide
+
+    -   Prototype
+
+        -   Code for each of the 3 questions (base on takehome3)
+
+        -   +Code for Shiny App
+
+    -   Team
+
+### **03 Story Telling Design** 
+
+Storyline of our project
+
+Content in each Shiny page
+
+What analysis?/ chart to apply in each page
+
+### **04 Shiny App Main Bar/Frame**
+
+All three members have agreed to adopt a consistent Shiny format for our project, with the details outlined below:
+
+-   Overview:
+
+    -   Goal/Challenge;
+
+    -   +Briefing of Module in the App;
+
+-   User Guide
+
+-   Sailor Swift‘s Career Profile   Q1’s analysis
+
+-   Spread of Oceanus Folk  Q2’s analysis
+
+-   Rising Music Stars   Q3’s analysis
+
+-   Insight/Conclusion
+
+### **05 Timeline**
+
+-   June 8^th^, 11:59pm:              Proposal on Netlify
+
+-   June 26^th^, 11:59pm:             Poster on Elearn
+
+-   July 2^nd^, 2:00-3:00pm:        Poster Presentation
+
+-   July 6^th^, 11:59pm:               Final Submission (WebPage, Shiny, User guide, Poster, Minute)
+
+### **06  Other issues**
+
+**Decide how to distinguish input id: id + Initial to avoid conflict?**
+
+We agree to use variable name +id, e.g. yearinput_F, nameinput_L, genreinput_Z
+
+## **Action List (**Before Next Meeting**)**
+
+1.  Github repository build and connect
+
+2.  WebPage’s Quarto, Css,  qmd & Netlify
+
+3.  Shiny App’s Quarto, Css,  qmd (& Netlify)?
+
+4.  Proposal
+
+5.  Minute for meeting 1
