@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Linsen Lu">
 
-<title>Proposal – ISSS608-VAA-T9</title>
+<title>Project Overview – Sailor Shift: Rise and Resonance</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +71,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="custom1.css">
 </head>
 
 <body class="nav-fixed quarto-light">
@@ -80,7 +82,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">ISSS608-VAA-T9</span>
+    <span class="navbar-title">Sailor Shift: Rise and Resonance</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -104,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-discovery">    
         <li>
     <a class="dropdown-item" href="./Variables.html">
- <span class="dropdown-text">Variables</span></a>
+ <span class="dropdown-text">Dataset and Variables</span></a>
   </li>  
         <li>
     <a class="dropdown-item" href="./Data Wrangling.html">
@@ -139,21 +141,36 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
+  <li><a href="#motivation" id="toc-motivation" class="nav-link" data-scroll-target="#motivation">Motivation</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
+  <li><a href="#storyboard" id="toc-storyboard" class="nav-link" data-scroll-target="#storyboard">Storyboard</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Proposal</h1>
+<h1 class="title">Project Overview</h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Linsen Lu </p>
+          </div>
+  </div>
     
   
     
@@ -164,43 +181,32 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p><strong>Visual Analytics Project Proposal</strong></p>
-<p><strong>Mapping the Rise of Sailor Shift and the Ripple of Oceanus Folk:</strong></p>
-<p><strong>A Visual Analytics Journey</strong></p>
-<p><strong>Motivation</strong></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
+<p>The music industry is constantly evolving, with emerging genres and artists reshaping cultural landscapes. One notable example is the rise of “Oceanus Folk,” a genre popularized by the artist Sailor Shift. Understanding her influence requires examining musical trends, collaboration networks, and the genre’s transformation over time.</p>
+<p>Hence, there is a need for analytical tools that allow users to explore Sailor Shift’s career, collaborations, and legacy within the broader Oceanus Folk community. In this project, we propose a data-driven approach using visualizations to uncover key patterns in her artistic journey and forecast future genre developments.</p>
+</section>
+<section id="motivation" class="level2">
+<h2 class="anchored" data-anchor-id="motivation">Motivation</h2>
 <p>Oceanus Folk began as a niche genre tied to the cultural identity of the small island nation of Oceanus. Its unexpected global emergence—catalyzed by Sailor Shift’s meteoric career—offers a rare opportunity to examine the interplay between individual stardom, genre influence, and collaborative networks in music. Understanding how a genre spreads and evolves offers insight not only into musical trends but also into networked cultural transmission.</p>
-<p><strong>Problem Statement</strong></p>
-<p>We aim to explore how Oceanus Folk evolved from a local genre into a global phenomenon, focusing particularly on Sailor Shift’s role. We investigate:</p>
+</section>
+<section id="methodology" class="level2">
+<h2 class="anchored" data-anchor-id="methodology">Methodology</h2>
+<p>To understand the evolution and influence of Oceanus Folk, particularly through the career of Sailor Shift, our team adopted a modular, data-driven approach. The methodology consists of four key components:</p>
 <ul>
-<li><p>How Sailor’s collaborations and influence shaped the genre.</p></li>
-<li><p>The genre’s influence on others over time.</p></li>
-<li><p>The defining traits of rising stars and how to predict future Oceanus Folk influencers.</p></li>
+<li><p><strong>Network Construction</strong>: We parsed a JSON-based music knowledge graph into a tidygraph structure, identifying key node types (artists, songs, albums) and edge relationships (e.g., collaboration, influence). This provided the foundational structure for our visual analytics.</p></li>
+<li><p><strong>Career Profiling</strong>: We traced Sailor Shift’s career over time using timeline and slopegraph visualizations to reveal genre transitions and key milestones. This helped surface patterns in her collaborations and viral growth.</p></li>
+<li><p><strong>Influence Analysis</strong>: We extracted subgraphs to study how Sailor influenced and was influenced by others. By filtering specific edge types (e.g., <em>coverof</em>, <em>interpolatesfrom</em>), we mapped both direct and indirect genre diffusion and constructed genre-level Sankey diagrams and network timelines.</p></li>
+<li><p><strong>Rising Star Detection</strong>: Using centrality, clustering, and influence scores, we developed a model to highlight rising artists. We compared their early trajectories with Sailor’s to predict future Oceanus Folk influencers.</p></li>
 </ul>
-<p><strong>Related Work</strong></p>
-<p>We draw on network analysis techniques as implemented in the tidygraph and ggraph frameworks , and structure our problem understanding through HDAV (Hypothesis-Driven Approach for VAST) . We incorporate lessons on visual storytelling and exploratory workflows using tools developed in past VAST challenges .</p>
-<p><strong>Approach</strong></p>
-<p>Our project will follow these key modules, each owned by a team member:</p>
-<p><strong>Network Construction</strong>:</p>
-<ul>
-<li><p>Convert JSON knowledge graph (MC1_graph.json) into tbl_graph.</p></li>
-<li><p>Identify node types (songs, people, albums), edges (influence, collaboration), and their attributes (release dates, genres).</p></li>
-</ul>
-<p><strong>Career Profiling</strong>:</p>
-<ul>
-<li><p>Trace Sailor Shift’s career arc.</p></li>
-<li><p>Use time-based visualizations (timelines, slopegraphs) to show genre transitions and viral milestones.</p>
-<p><strong>Influence Diffusion</strong>:</p></li>
-<li><p>Construct subgraphs of Oceanus Folk works and their downstream influence.</p></li>
-<li><p>Use edge filtering to isolate influence types: coverof, interpolatesfrom, etc.</p></li>
-<li><p>Create genre-level Sankey diagrams and time-faceted network graphs to assess diffusion trends.</p>
-<p><strong>Rising Star Detection</strong>:</p></li>
-<li><p>Calculate centrality, community clustering, and influence scores.</p></li>
-<li><p>Compare Sailor’s early career path with other artists using slopegraphs and sparkline summaries.</p></li>
-<li><p>Build a Shiny module to predict likely future Oceanus Folk influences.</p></li>
-</ul>
-<p>yilin test</p>
+</section>
+<section id="storyboard" class="level2">
+<h2 class="anchored" data-anchor-id="storyboard">Storyboard</h2>
+<p>Our storyboard is structured into multiple interactive modules. Each module is specifically designed to address a key question that users may have about the Oceanus Folk music community, enabling them to explore Sailor Shift’s influence and the genre’s evolution from various perspectives. These proposed modules together will create a comprehensive, user-driven exploration platform, enabling a deep dive into the artistic and cultural dynamics of the Oceanus Folk genre.</p>
+<p>For more details, please move to our Shiny APP!</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

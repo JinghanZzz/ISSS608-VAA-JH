@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "ISSS608-VAA-T9"
+  title: "Sailor Shift: Rise and Resonance"
   navbar:
     right:
       - href: "index.qmd"
@@ -11,7 +11,7 @@ website:
         text: "Project Overview"
       - text: "Discovery"
         menu: 
-          - text: "Variables"
+          - text: "Dataset and Variables"
             href: "Variables.qmd"
           - text: "Data Wrangling"
             href: "Data Wrangling.qmd"
@@ -28,7 +28,9 @@ format:
     theme:
       - cosmo
       - brand
-    css: styles.css
+    css: 
+      - styles.css
+      - custom1.css
     toc: true
 
 editor: visual
