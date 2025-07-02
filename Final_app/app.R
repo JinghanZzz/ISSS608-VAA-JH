@@ -39,7 +39,7 @@ top3_names <- c("Kimberly Snyder", "Ping Tian", "Yang Zhao")
 
 
 # ===== UI =====
-ui <- navbarPage("Integrated Shiny App",
+ui <- navbarPage("Sailor Shift: Rise and Resonance",
                  
                  # --- Tab 1: Artist Explorer 
                  tabPanel("Artist Explorer",

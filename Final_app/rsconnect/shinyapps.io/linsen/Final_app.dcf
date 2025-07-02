@@ -1,0 +1,12 @@
+name: Final_app
+title: Final_app
+username: linsen
+account: linsen
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 15021674
+bundleId: 10552247
+url: https://linsen.shinyapps.io/Final_app/
+version: 1
+asMultiple: FALSE
+asStatic: FALSE

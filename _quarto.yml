@@ -17,7 +17,7 @@ website:
             href: "Data Wrangling.qmd"
           - text: "EDA"
             href: "EDA.qmd"
-      - href: "Shiny App.qmd"
+      - href: "https://linsen.shinyapps.io/Final_app/"
         text: "Shiny App"  
       - href: "User Guide.qmd"
         text: "User Guide"  
