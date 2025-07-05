@@ -1,6 +1,10 @@
 ---
-title: "Poster"
-format: html
+title: "Sailor Shift: Rise and Resonance"
+format:
+  html:
+    self-contained: true
+
 ---
 
-111
+
+![](pic/poster.jpg)

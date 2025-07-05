@@ -331,9 +331,9 @@
   {
     "objectID": "Poster.html",
     "href": "Poster.html",
-    "title": "Poster",
+    "title": "Sailor Shift: Rise and Resonance",
     "section": "",
-    "text": "111"
+    "text": "format: html: self-contained: true title-block: false\n—"
   },
   {
     "objectID": "Shiny App.html",
